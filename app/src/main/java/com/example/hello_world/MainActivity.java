@@ -2,6 +2,10 @@ package com.example.hello_world;
 
 import android.os.Bundle;
 
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Button;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -9,6 +13,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    TextView tvMain;
+    Button btnChangeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +27,18 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        btnChangeText = findViewById(R.id.btnChangeText);
+        tvMain = findViewById(R.id.tvMain);
+
+        // Set the click listener
+        btnChangeText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Update the text when button is clicked
+                tvMain.setText("Labas");
+            }
+        });
+
     }
 }
