@@ -31,14 +31,13 @@ public class MainActivity extends AppCompatActivity {
         btnChangeText = findViewById(R.id.btnChangeText);
         tvMain = findViewById(R.id.tvMain);
 
-        // Set the click listener
         btnChangeText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Update the text when button is clicked
                 tvMain.setText("Labas");
             }
         });
 
     }
+
 }

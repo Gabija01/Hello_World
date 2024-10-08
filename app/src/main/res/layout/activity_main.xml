@@ -19,12 +19,22 @@
 
     <Button
         android:id="@+id/btnChangeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="169dp"
+        android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:text="Change Text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMain" />
+
+    <Button
+        android:id="@+id/btnChangeColor"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:text="Change Text Color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangeText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
