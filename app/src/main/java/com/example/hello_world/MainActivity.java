@@ -1,5 +1,6 @@
 package com.example.hello_world;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import android.view.View;
@@ -15,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     TextView tvMain;
-    Button btnChangeText;
+    Button btnChangeText, btnChangeColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvMain.setText("Labas");
+            }
+        });
+        btnChangeColor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvMain.setTextColor(Color.RED);
             }
         });
 
