@@ -1,5 +1,6 @@
 package com.example.hello_world;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import android.view.View;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 tvMain.setText("Labas");
             }
         });
+        View btnChangeColor = null;
         btnChangeColor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
